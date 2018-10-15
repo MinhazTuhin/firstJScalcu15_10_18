@@ -3,95 +3,91 @@ var nowValue;
 var lastFinal=0;
 var totalValue;
 
-function t0(){
-	nowValue = document.getElementById("three").value;
-	preValue = (preValue*10)+Number(nowValue);
-}
 
-function t1(){
-	nowValue = document.getElementById("one").value;
+function zero(){
+    nowValue = document.getElementById("zero").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t2(){
-	nowValue = document.getElementById("two").value;
+function one(){
+    nowValue = document.getElementById("one").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t3(){
-	nowValue = document.getElementById("three").value;
+function two(){
+    nowValue = document.getElementById("two").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t4(){
-	nowValue = document.getElementById("three").value;
+function three(){
+    nowValue = document.getElementById("three").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t5(){
-	nowValue = document.getElementById("three").value;
+function four(){
+    nowValue = document.getElementById("four").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t6(){
-	nowValue = document.getElementById("three").value;
+function five(){
+    nowValue = document.getElementById("five").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t7(){
-	nowValue = document.getElementById("three").value;
+function six(){
+    nowValue = document.getElementById("six").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t8(){
-	nowValue = document.getElementById("three").value;
+function seven(){
+    nowValue = document.getElementById("seven").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function t9(){
-	nowValue = document.getElementById("three").value;
+function eight(){
+    nowValue = document.getElementById("eight").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
-function tt(){
-	nowValue = document.getElementById("three").value;
+function nine(){
+    nowValue = document.getElementById("nine").value;
 	preValue = (preValue*10)+Number(nowValue);
+    document.getElementById("display").value = preValue;
 }
-
 function plus(){
-	lastFinal = lastFinal+preValue;
-	preValue = 0;
-	document.getElementById("sd").innerHTML = lastFinal;
+    nowValue = document.getElementById("plus").value;
+	preValue = nowValue;
+    document.getElementById("display").value = preValue;
 }
-
 function minus(){
-	lastFinal = lastFinal+preValue;
-	preValue = 0;
-	document.getElementById("sd").innerHTML = lastFinal;
+    nowValue = document.getElementById("minus").value;
+	preValue = nowValue;
+    document.getElementById("display").value = preValue;
 }
-
 function mul(){
-	lastFinal = lastFinal+preValue;
-	preValue = 0;
-	document.getElementById("sd").innerHTML = lastFinal;
+    nowValue = document.getElementById("mul").value;
+	preValue = nowValue;
+    document.getElementById("display").value = preValue;
 }
-
 function div(){
-	lastFinal = lastFinal+preValue;
-	preValue = 0;
-	document.getElementById("sd").innerHTML = lastFinal;
+    nowValue = document.getElementById("div").value;
+	preValue = nowValue;
+    document.getElementById("display").value = preValue;
 }
-
-function show(){
+function dot(){
+    nowValue = document.getElementById("dot").value;
+	preValue = nowValue;
+    document.getElementById("display").value = preValue;
+}
+function result(){
 	totalValue = lastFinal+preValue;
-	document.getElementById("dis").innerHTML = totalValue;	
+	document.getElementById("display").value = totalValue;
+	document.getElementById("semidisplay").value = totalValue;
 }
-
 function clar(){
 	preValue = 0;
 	nowValue = 0;
 	lastFinal= 0;
 	totalValue=0;
-	document.getElementById("sd").innerHTML = lastFinal;
-	document.getElementById("dis").innerHTML = totalValue;
+	document.getElementById("display").value = lastFinal;
 }
