@@ -11,31 +11,33 @@
 		</div>
 		<div class="two">
 			<table class="cal">
-				<tr><td colspan="4"><input name="display" type="text" id="display"></input></td></tr>
+				<tr>
+					<td colspan="4"><input name="display" type="text" id="display"></input></td>
+				</tr>
 				<tr>
 					<td colspan="2"><input name="semidisplay" type="text" id="semidisplay"></input></td>
 					<td colspan="2"><button name="clar" id="clar" onclick="clar()">Clear</button></td>
 				</tr>
 				<tr>
-					<td><button name="seven" id="seven" onclick="seven()" value="7">7</button></td>
-					<td><button name="eight" id="eight" onclick="eight()" value="8">8</button></td>
-					<td><button name="nine" id="nine" onclick="nine()" value="9">9</button></td>
+					<td><button name="seven" id="seven" onclick="sendValue(this.value)" value="7">7</button></td>
+					<td><button name="eight" id="eight" onclick="sendValue(this.value)" value="8">8</button></td>
+					<td><button name="nine" id="nine" onclick="sendValue(this.value)" value="9">9</button></td>
 					<td><button name="div" id="div" onclick="div()"  value="/">/</button></td>
 				</tr>
 				<tr>
-					<td><button name="four" id="four" onclick="four()" value="4">4</button></td>
-					<td><button name="five" id="five" onclick="five()" value="5">5</button></td>
-					<td><button name="six" id="six" onclick="six()" value="6">6</button></td>
+					<td><button name="four" id="four" onclick="sendValue(this.value)" value="4">4</button></td>
+					<td><button name="five" id="five" onclick="sendValue(this.value)" value="5">5</button></td>
+					<td><button name="six" id="six" onclick="sendValue(this.value)" value="6">6</button></td>
 					<td><button name="mul" id="mul" onclick="mul()"  value="*">*</button></td>
 				</tr>
 				<tr>
-					<td><button name="one" id="one" onclick="one()" value="1">1</button></td>
-					<td><button name="two" id="two" onclick="two()" value="2">2</button></td>
-					<td><button name="three" id="three" onclick="three()" value="3">3</button></td>
+					<td><button name="one" id="one" onclick="sendValue(this.value)" value="1">1</button></td>
+					<td><button name="two" id="two" onclick="sendValue(this.value)" value="2">2</button></td>
+					<td><button name="three" id="three" onclick="sendValue(this.value)" value="3">3</button></td>
 					<td><button name="minus" id="minus" onclick="minus()" value="-">-</button></td>
 				</tr>
 				<tr>
-					<td><button name="zero" id="zero" onclick="zero()" value="0">0</button></td>
+					<td><button name="zero" id="zero" onclick="sendValue(this.value)" value="0">0</button></td>
 					<td><button name="dot" id="dot" onclick="dot()" value=".">.</button></td>
 					<td><button name="plus" id="plus" onclick="plus()" value="+">+</button></td>
 					<td><button name="result" id="result" onclick="result()">=</button></td>
@@ -45,7 +47,6 @@
 		<div class="three">
 			<p>minhaztuhin@gmail.com</p>
 		</div>
-		
 		<script src="firstJScalcu15_10_18.js"></script>
 	</body>
 </html>
